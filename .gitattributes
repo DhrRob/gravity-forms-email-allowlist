@@ -18,4 +18,3 @@ phpcs.xml export-ignore
 README.md export-ignore
 webpack.config.js export-ignore
 yarn.lock export-ignore
-example-list.txt
