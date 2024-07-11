@@ -1,0 +1,24 @@
+{
+	"name": "post-title-yoast",
+	"version": "0.1.0",
+	"description": "Easily add the Yoast SEO title to the core Post Title block.",
+	"author": "Rob Migchels",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/dhrrob/post-title-yoast.git"
+	},
+	"homepage": "https://robmigchels.com/plugins/post-title-yoast/",
+	"scripts": {
+		"build": "wp-scripts build",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js:src": "wp-scripts lint-js ./src",
+		"lint:js:src:fix": "wp-scripts lint-js ./src --fix",
+		"update-pot": "wp i18n make-pot . languages/gf-email-allowlist.pot --exclude=src"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.15.0",
+		"webpack-remove-empty-scripts": "^0.8.4"
+	}
+}

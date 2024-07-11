@@ -1,0 +1,27 @@
+{
+	"name": "rob-migchels/gf-emailallowlist",
+	"description": "This plugin adds the ability to set an allowlist of domains on the email field in Gravity Forms.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.4",
+		"wp-cli/wp-cli-bundle": "*"
+	},
+	"config": {
+		"platform": {
+			"php": "7.4"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "3.*",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"wp-coding-standards/wpcs": "^3.0"
+	},
+	"scripts": {
+		"lint": "@php ./vendor/bin/phpcs"
+	}
+}
