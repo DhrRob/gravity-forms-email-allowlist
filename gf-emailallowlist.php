@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Gravity Forms Email Allowlist
+ * Plugin URI: https://www.robmigchels.com/plugins/gf-allowlist
  * Description: This plugin adds the ability to set an allowlist of domains on the email field in Gravity Forms.
  * Version: 1.0.0
  * Author: Rob Migchels
