@@ -182,6 +182,11 @@ class GFEmailAllowlist extends GFAddOn {
 				continue;
 			}
 
+			// If the field "Enable Email Allowlist" option is disabled, skip.
+			if ( empty( $field['rmgf_email_allowlist'] ) || false === $field['rmgf_email_allowlist'] ) {
+				continue;
+			}
+
 			// Collect allowed domains from backend and clean up.
 			$allowlist = $default_allowlist;
 			if ( ! empty( $field['email_allowlist'] ) ) { // collect per form settings.
