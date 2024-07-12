@@ -17,9 +17,16 @@ This plugin adds the ability to set an allowlist of domains on the email field i
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Navigate from the Dashboard to the 'Forms' > 'Settings' > 'Email Allowlist' to set up.
 
+=== Screenshots ===
+
+1. Plugin Settings
+2. Email Field Settings
+
 === Changelog ===
 
 = 1.0.1 TBA =
+* Fixed validation always happening regardless of "Enable Email Allowlist" setting on email fields.
+* Fixed validation always happening, even if there is no input. We leave that one up to Gravity Forms.
 * Updated language strings.
 * Added screenshots.
 

@@ -158,12 +158,12 @@ class GFEmailAllowlist extends GFAddOn {
 	 */
 	public function rmgf_validation( $validation_result ) {
 
-		// Collect global settings.
-		$default_allowlist = get_option( 'gravityformsaddon_' . $this->_slug . '_settings' );
-		if ( is_array( $default_allowlist ) && ! empty( $default_allowlist['emailallowlist'] ) ) {
-			$default_allowlist = $default_allowlist['emailallowlist'];
+		// Collect settings.
+		$allowlist = get_option( 'gravityformsaddon_' . $this->_slug . '_settings' );
+		if ( is_array( $allowlist ) && ! empty( $allowlist['emailallowlist'] ) ) {
+			$allowlist = $allowlist['emailallowlist'];
 		} else {
-			$default_allowlist = '';
+			$allowlist = '';
 		}
 
 		// Collect form results.
@@ -188,10 +188,7 @@ class GFEmailAllowlist extends GFAddOn {
 			}
 
 			// Collect allowed domains from backend and clean up.
-			$allowlist = $default_allowlist;
-			if ( ! empty( $field['email_allowlist'] ) ) { // collect per form settings.
-				$allowlist = $field['email_allowlist'];
-			}
+			$allowlist = $allowlist;
 
 			// Get the domain from user entered email.
 			$email  = $this->rmgf_clean( rgpost( "input_{$field['id']}" ) );
@@ -250,10 +247,10 @@ class GFEmailAllowlist extends GFAddOn {
 			$validation_result['is_valid'] = apply_filters( 'rmgf_is_valid', false, $field, $email, $domain, $tld, $allowlist );
 			$field['failed_validation']    = true;
 
-			// Set a default validation message.
-			$default_message    = __( 'Sorry, the email address entered is not eligible for this form.', 'gf-email-allowlist' );
+			// Set a validation message.
+			$message            = __( 'Sorry, the email address entered is not eligible for this form.', 'gf-email-allowlist' );
 			$settings_option    = get_option( 'gravityformsaddon_' . $this->_slug . '_settings' );
-			$validation_message = $default_message;
+			$validation_message = $message;
 
 			// Check if the settings option exists and contains the specific error message.
 			if ( isset( $settings_option['emailallowlist_error_msg'] ) && ! empty( $settings_option['emailallowlist_error_msg'] ) ) {
