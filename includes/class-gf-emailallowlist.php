@@ -187,9 +187,6 @@ class GFEmailAllowlist extends GFAddOn {
 				continue;
 			}
 
-			// Collect allowed domains from backend and clean up.
-			$allowlist = $allowlist;
-
 			// Get the domain from user entered email.
 			$email  = $this->rmgf_clean( rgpost( "input_{$field['id']}" ) );
 			$domain = $this->rmgf_clean( rgar( explode( '@', $email ), 1 ) );
