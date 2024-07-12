@@ -24,7 +24,7 @@ This plugin adds the ability to set an allowlist of domains on the email field i
 
 === Changelog ===
 
-= 1.0.1 TBA =
+= 1.0.1 2024-07-12 =
 * Fixed validation always happening regardless of "Enable Email Allowlist" setting on email fields.
 * Fixed validation always happening, even if there is no input. We leave that one up to Gravity Forms.
 * Updated language strings.
