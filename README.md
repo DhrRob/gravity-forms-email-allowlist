@@ -12,6 +12,11 @@ This WordPress plugin adds the ability to set an allowlist of email addresses, d
 
 ## Changelog
 
+### 1.0.1 TBA
+
+* Updated language strings.
+* Added screenshots.
+
 ### 1.0 - 2024-07-11
 
 * Initial release.

@@ -3,7 +3,7 @@ Contributors: dhrrob
 Tags: gravity forms, gravity form, forms, gravity, form, email allowlist, allow email, allowlist, email whitelist, white list, whitelist
 Requires at least: 6.5
 Tested up to: 6.5.5
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,10 @@ This plugin adds the ability to set an allowlist of domains on the email field i
 3. Navigate from the Dashboard to the 'Forms' > 'Settings' > 'Email Allowlist' to set up.
 
 === Changelog ===
+
+= 1.0.1 TBA =
+* Updated language strings.
+* Added screenshots.
 
 = 1.0 2024-07-11 =
 * Initial release.
