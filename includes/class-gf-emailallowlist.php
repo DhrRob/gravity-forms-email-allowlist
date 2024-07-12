@@ -198,6 +198,11 @@ class GFEmailAllowlist extends GFAddOn {
 			$domain = $this->rmgf_clean( rgar( explode( '@', $email ), 1 ) );
 			$tld    = strrchr( $domain, '.' );
 
+			// Input is empty, do not validate.
+			if ( empty( $email ) ) {
+				continue;
+			}
+
 			/**
 			 * Filter to allow third party plugins short circuit allowlist validation.
 			 *
