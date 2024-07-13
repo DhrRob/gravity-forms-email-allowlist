@@ -1,6 +1,6 @@
 ==== Gravity Forms Email Allowlist ====
 Contributors: dhrrob
-Tags: gravity forms, gravity form, forms, gravity, form, email allowlist, allow email, allowlist, email whitelist, white list, whitelist
+Tags: gravity forms, email allowlist, allowlist, email whitelist, whitelist
 Requires at least: 6.5
 Tested up to: 6.5.5
 Stable tag: 1.0.1
@@ -13,7 +13,7 @@ This plugin adds the ability to set an allowlist of domains on the email field i
 
 === Installation ===
 
-1. Search for and install the 'Gravity Forms Email Allowlist' OR Upload `gravity-forms-email-allowlist` to the `/wp-content/plugins/` directory.
+1. Search for and install the 'Gravity Forms Email Allowlist' OR Upload `gf-email-allowlist` to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Navigate from the Dashboard to the 'Forms' > 'Settings' > 'Email Allowlist' to set up.
 

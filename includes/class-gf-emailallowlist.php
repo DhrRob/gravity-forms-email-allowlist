@@ -15,7 +15,7 @@ class GFEmailAllowlist extends GFAddOn {
 	protected $_version                  = '1.0.0';
 	protected $_min_gravityforms_version = '2.8';
 	protected $_slug                     = 'gf_email_allowlist';
-	protected $_path                     = 'gravity-forms-email-allowlist/gf-emailallowlist.php';
+	protected $_path                     = 'gf-email-allowlist/gf-emailallowlist.php';
 	protected $_full_path                = __FILE__;
 	protected $_title                    = 'Gravity Forms Email Allowlist';
 	protected $_short_title              = 'Email Allowlist';
