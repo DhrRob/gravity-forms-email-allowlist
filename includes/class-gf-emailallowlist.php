@@ -123,7 +123,7 @@ class GFEmailAllowlist extends GFAddOn {
 	 * @return array modified tooltips
 	 */
 	public function rmgf_field_tooltips( $tooltips ) {
-		$admin_url                                    = get_admin_url() . 'admin.php?page=gf_settings&subview=ibrains-gf';
+		$admin_url                                    = get_admin_url() . 'admin.php?page=gf_settings&subview=gf_email_allowlist';
 		$tooltips['form_field_rmgf_enable_allowlist'] = __( "<strong>Enable Email Allowlist</strong>Enable the global allowlist for this field as defined in the <a href=\"$admin_url\" target=\"_blank\">form settings</a>.", 'gf-email-allowlist' );
 
 		return $tooltips;
